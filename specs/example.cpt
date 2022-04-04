@@ -1,0 +1,41 @@
+Created by burak on 4.04.2022
+
+This is a concept file with following syntax for each concept.
+# Root girisi kontrol edilip kabul edildi
+* "2" saniye kadar bekle
+* "com.ozdilek.ozdilekteyim:id/btnSuccess" elementin sayfada gorunur olduğunu kontrol et ve tıkla
+*"2" saniye kadar bekle
+# Kategoriler sekmesine tıklandı
+* "com.ozdilek.ozdilekteyim:id/tv_startShoppingStore" elementin sayfada gorunur olduğunu kontrol et ve tıkla
+* "2" saniye kadar bekle
+* Xpath "//android.widget.FrameLayout[@content-desc='Kategoriler']" li elementi bul ve tıkla
+* "2" saniye kadar bekle
+# Kadın ve pantolon sekmesinden urunlere gecis yapıldı
+* Xpath "//*[@text='Kadın']" li elementi bul ve tıkla
+* "2" saniye kadar bekle
+* Xpath "//*[@text='Pantolon']" li elementi bul ve tıkla
+* "2" saniye kadar bekle
+# 2 defa scroll yapıldı
+* Sayfayı aşağı doğru scroll yap
+* "2" saniye kadar bekle
+* Sayfayı aşağı doğru scroll yap
+* "2" saniye kadar bekle
+# Random urun secimi yapıldı
+* Xpath "//*[@resource-id='com.ozdilek.ozdilekteyim:id/imageView']" kullanarak random ürün secimi
+* "2" saniye kadar bekle
+* Xpath "//*[@resource-id='com.ozdilek.ozdilekteyim:id/imgFav']" li elementi bul ve tıkla
+* "2" saniye kadar bekle
+# Login sayfası için giriş yapıldı ve geri tusuna basıldı
+* Id "com.ozdilek.ozdilekteyim:id/etEposta" li elementi bul ve "burak@testinium.com" gir
+* "2" saniye kadar bekle
+* Id "com.ozdilek.ozdilekteyim:id/etPassword" li elementi bul ve "123456" gir
+* "2" saniye kadar bekle
+* Id "com.ozdilek.ozdilekteyim:id/btnLogin" li elementi bul ve tıkla
+* "2" saniye kadar bekle
+* Id "com.ozdilek.ozdilekteyim:id/ivBack" li elementi bul ve tıkla
+* "2" saniye kadar bekle
+# Beden secimi yapıldı ve urun sepete eklendi
+* Xpath "//*[@resource-id='com.ozdilek.ozdilekteyim:id/tvInSizeItem']" kullanarak random beden secimi
+* "2" saniye kadar bekle
+* Id "com.ozdilek.ozdilekteyim:id/relLayAddCartBtn" li elementi bul ve tıkla
+* "2" saniye kadar bekle
